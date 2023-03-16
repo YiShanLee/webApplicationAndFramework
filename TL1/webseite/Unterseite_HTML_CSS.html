@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML und CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="design_Unterseiten.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="startseite.html"
+        ><img class="logo" src="./img/website-logo.jpg" alt="logo"
+      /></a>
+      <h1>Web Technologies Helper</h1>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./startseite.html">Übersicht</a>
+        </li>
+        <li>
+          <a href="./modul.html">Modul</a>
+        </li>
+        <li class="flyout">
+          <a class="active" href="./kapitel.html">Inhalt</a>
+          <ul>
+            <li><a href="./Unterseite_Web.html">Das Web</a></li>
+            <li>
+              <a class="active" href="./Unterseite_HTML_CSS.html">HTML/CSS</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./quiz.html">Quiz</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- content of webpage -->
+    <main class="content" id="back">
+      <h1>HTML und CSS</h1>
+      Hier finden sich die Fachbegriffe für das Kapitel "HTML/CSS" in Form von
+      Karteikarten. Die Überschriften stehen für den jeweiligen Fachbegriff. Der
+      Text darunter stellt die Definition für den Fachbegriff dar. Am Rand
+      hinter den Bildern befinden sich weitere Informationen zu den
+      Fachbegriffen. 
+      <div>Viel Spaß beim Lernen. :-)</div>
+
+      <div class="grid-container">
+        <!-- Gridcontainer for definitons -->
+        <div class="grid-containerd">
+          <div class="griditem">
+            <h2>HTML Dokumente</h2>
+            <p>
+              Ein HTML Dokument besteht immer aus einem head-Teil und einem
+              body-Teil, indem Inhalte zwischen Tags stehen. <br />
+              Somit sind die Minimaleinheiten eines HTML Dokuments der html Tag,
+              der das Wurzelelement ist, der head Tag, der Titel, Metadaten,
+              style und script tags beinhaltet und der body Tag, zwischen dem
+              der für den Browsernutzer sichbare Inhalt sich befindet. <br />
+              HTML Dokumente sind versionslos und damit sowohl
+              abwärtskompatibel, wie auch für künftige Versionen nutzbar.
+            </p>
+          </div>
+          <div class="griditem">
+            <h2>Block- und Zeichenelemente</h2>
+            <p>
+              BLOCKELEMENTE: <br />
+              bescheiben, die Struktur eines Dokuments. In einem einfachen HTML
+              Dokument werden die Blöcke nacheinander angezeigt.
+            </p>
+            <p>
+              ZEICHENELEMENTE: <br />
+              werden innerhalb eines Blocks genutzt und dienen der Formatierung.
+              Dabei kann zwischen logischer und absoluter Formatierung
+              unterschieden.
+            </p>
+          </div>
+
+          <div class="griditem">
+            <h2>Strukturierung von Webseiten</h2>
+            <p>
+              Webseiten werden durch div-Elemente strukturiert. In HTML5
+              erlauben die div-Elemenete als spezifische Tags auch Aussagen über
+              den Inhalt, wie z.B. header, footer, nav, etc.<br />
+              Sie machen nicht nur die Struktur der Webseite deutlich, sondern
+              helfen auch dem Browser die Inhalte von spezifischen Elementen zu
+              verstehen. <br />
+              Die Positionierung der div-Elemente wird durch CSS definiert.
+            </p>
+          </div>
+          <div class="griditem">
+            <h2>Formulare</h2>
+            <p>
+              Formulare können vom Nutzer ausgefüllt werden und dann über einen
+              Submit-Button zum Server übertragen werden. <br />
+              Die Übertragung zum Server erfolgt mittels HTTP und meist der
+              Methode POST. Der beim Submit-Button hinterlegte PHP-Code wird
+              dann auf dem Server ausgeführt und die Ergebnisse, die vom Server
+              z.B. in ein HTML Template eingefügt werden können, mittels eines
+              Array, werden zum Client zurückübertragen.
+            </p>
+          </div>
+
+          <div class="griditem">
+            <h2>Offline-Anwendungen</h2>
+            <p>
+              Im Zuge der Konkurrenz zwischen narrativen Apps und HTML bei
+              mobilien Endgeräten wurde für HTML eine Funktionalität von
+              Anwendungen trotz Verbindungsabbruch ermöglicht. <br />
+              Hierbei wird zunächst ein Cache-Manifest angelegt, in dem
+              festgelegt wird, was gespeichert wird und was nicht und was im
+              Fehlerfall angezeigt wird. <br />
+              Dann werden die htaccess files angepasst und das Cache-Manifest
+              verlinkt.
+            </p>
+          </div>
+          <div class="griditem">
+            <h2>CSS Einbindung</h2>
+            <p>
+              Es gibt 3 Möglichkeiten CSS einzubinden. <br />
+              Man kann CSS in das Element einbinden, was aber den Nachteil hat,
+              dass es schlecht wartbar ist, zu Redundanzen führen kann und keine
+              klare Trennung vom Inhalt hat. <br />
+              Man kann CSS auch im head einbinden, was zwar eine Trennung vom
+              Inhalt ermöglicht, jedoch nicht über mehrere Seiten hinweg genutzt
+              werden kann. <br />
+              Die letzte Möglichkeit ist ein extra CSS Stylesheet zu erzeugen,
+              das eine vollständige Trennung von Inhalt und Präsentation
+              erlaubt, über mehrere Seiten wiederverwendbar ist und einfach zu
+              warten ist. Außerdem erlaubt es eine Trennung nach
+              Funktionalitäten.
+            </p>
+          </div>
+
+          <div class="griditem">
+            <h2>Document Object Model</h2>
+            <p>
+              Das DOM ist auf der einen Seite ein Modell und auf der anderen
+              Seite auch eine Programmierschnittstelle. <br />
+              Es ist ein plattform- und sprachneutrales Interface und ermöglicht
+              eine dynamischen Zugriff und Veränderung des Inhalts, der Struktur
+              und Gestalt von Dokumenten, sowie auch die Weiterverarbeitung und
+              Integration der Ergebnisse in das Dokument.
+            </p>
+          </div>
+          <div class="griditem">
+            <h2>Boxmodell</h2>
+            <p>
+              definiert die Berechnung der Breite und Höhe von Elementen <br />
+              - Gesamtbreite eines Elements errechnet aus einer Addition <br />
+              - der Breite des Elementinhalts (width) <br />
+              - des Innenabstands (padding) <br />
+              - der Rahmenstärke (border-width) und <br />
+              - des Außenabstands (margin) <br />
+              - gilt analog für die Höhe (height) <br />
+            </p>
+            <p>
+              <a
+                href="https://www.w3schools.com/css/css_boxmodel.asp"
+                target="_blank"
+              >
+                mehr Informationen
+              </a>
+            </p>
+          </div>
+
+          <div class="griditem">
+            <h2>Pseudoklassen und Pseudoelemente</h2>
+            <p>
+              PSEUDOKLASSEN: <br />
+              Es werden spezielle Zustände von Elementen adressiert. <br />
+              Beispiel: Zeige an, ob ein Link schon einmal angeklickt wurde oder
+              nicht
+            </p>
+            <p>
+              PSEUDOELEMENTE: <br />
+              werden verwendet, um Teile eines Elements anzugeben. <br />
+              Beispiel: Formatiere die erste Zeile oder den ersten Buchstaben in
+              einer anderen Farbe.
+            </p>
+          </div>
+          <div class="griditem">
+            <h2>Kaskardierung</h2>
+            <p>
+              CSS steht für Cascading Stylesheets, was impliziert, dass mehrere
+              Stylesheets angewendet werden können. <br />
+              Es werden also mehrere Stylebeschreibungen zusammengefasst und auf
+              ein Dokument angewendet. <br />
+              Dabei werden externe, interne und durch den Nutzer in seinem
+              Browser registrierte Sytlesheets unterschieden. <br />
+              Treten für die Stylebschreibung eines Elements Konflikte auf, so
+              werden sie durch komplexe Vorrangsregeln aufgelöst. So
+              überschreiben zum Beispiel neuere Stylesheets ältere Stylesheets,
+              etc.
+            </p>
+          </div>
+        </div>
+        <!-- Gridcontainer for images -->
+        <div class="grid-containeri">
+          <div class="innercard">
+            <!-- flipcard -->
+            <div class="thecard">
+              <div class="thefront">
+                <img
+                  id="info1"
+                  src="./img/escapesequenzen.PNG"
+                  alt="some letters"
+                />
+              </div>
+              <div class="theback">
+                <h2>Escape Sequenzen</h2>
+                <p>
+                  ... werden benötigt, wenn Zeichen verwendet werden, die in der
+                  Markup Language oder Programmiersprache selbst eine Bedeutung
+                  haben, wie &lt; <br />
+                  oder auch Sonderzeichen, wie &uuml;, die sonst Mojibake
+                  verursachen würden.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="innercard">
+            <!-- flipcard -->
+            <div class="thecard">
+              <div class="thefront">
+                <img id="info2" src="./img/farbe.PNG" alt="colors" />
+              </div>
+              <div class="theback">
+                <h2>Farbangaben</h2>
+                <p>
+                  Über vordefinierte Farbnamen oder Hexadezimalzahlen (Groß- und
+                  Kleinschreibung nicht wichtig) oder... <br />
+                  - rgb (...) <br />
+                  - rgba (...) <br />
+                  - hsl (...) <br />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="innercard">
+            <!-- flipcard -->
+            <div class="thecard">
+              <div class="thefront">
+                <img
+                  id="info3"
+                  src="./img/cachemanifest.PNG"
+                  alt="Cache-Manifest"
+                />
+              </div>
+              <div class="theback">
+                <h2>Cache-Manifest</h2>
+                <p>
+                  CACHE MANIFEST: <br />
+                  wird im Appcache gespeichert.
+                </p>
+                <p>
+                  NETWORK: <br />
+                  wird nicht im Appcache gespeichert
+                </p>
+                <p>
+                  FALLBACK: <br />
+                  wird im Fehlerfall angezeigt
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="innercard">
+            <!-- flipcard -->
+            <div class="thecard">
+              <div class="thefront">
+                <img
+                  id="info4"
+                  src="./img/selektor.PNG"
+                  alt="some CSS Code"
+                />
+              </div>
+              <div class="theback">
+                <h2>Selektoren</h2>
+                <p>
+                  Selektoren wählen mit Hilfe des DOMs Elemente aus und weisen
+                  ihnen Werte und Attribute zu (z.B. Schriftart, Schriftfarbe,
+                  etc.). <br />
+                  Es kann über Eltern-Kind-Beziehung, über ID und
+                  Attribut-Selektoren, selbstdefinierte Klassen und
+                  Pseudoklassen und -elemente selektiert werden.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="innercard">
+            <!-- flipcard -->
+            <div class="thecard">
+              <div class="thefront">
+                <img id="info5" src="./img/links.PNG" alt="Questionmarks" />
+              </div>
+              <div class="theback">
+                <h2>Weitere Links</h2>
+                <p>
+                  <a href="https://www.w3schools.com/html/" target="_blank">
+                    HTML Tutorial
+                  </a>
+                </p>
+
+                <p>
+                  <a href="https://www.w3schools.com/css/" target="_blank">
+                    CSS Tutorial
+                  </a>
+                </p>
+
+                <p>
+                  <a
+                    href="https://validator.w3.org/#validate_by_input"
+                    target="_blank"
+                  >
+                    HTML validator
+                  </a>
+                </p>
+
+                <p>
+                  <a
+                    href="https://jigsaw.w3.org/css-validator/#validate_by_input"
+                    target="_blank"
+                  >
+                    CSS validator
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <a href="hinzufuegen.html">Begriff hinzufügen</a>
+      <a href="impressum.html">Impressum</a>
+    </footer>
+  </body>
+</html>

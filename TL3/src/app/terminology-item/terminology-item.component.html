@@ -1,0 +1,9 @@
+<ng-container class="bg-primary" *ngIf="terminology">
+    <td scope="col">{{ terminology.chapter }}</td>
+    <td scope="col">{{ terminology.title }}</td>
+    <td scope="col">{{ terminology.desc }}</td>
+    <td scope="col">{{ terminology.creator }}</td>
+    <td scope="col"><button type="button"  class="btn btn-light" routerLink="/terminology-edit/{{terminology._id}}" (click)="changeTerminology(terminology)">Bearbeiten</button></td>
+    <td> <button (click)="delete()" class="btn btn-light">X</button></td>
+</ng-container>
+

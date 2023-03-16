@@ -1,0 +1,47 @@
+rect {
+    fill: steelblue;
+}
+
+.fully {
+    fill: lightseagreen;
+}
+
+
+.barGroup {
+    fill: gold;
+}
+
+svg {
+    max-width: 1000px;
+    max-height: 500px;
+    /* padding-top:1px; */
+    margin-top:10px
+}
+
+g {
+    border: thin solid black;
+}
+
+.pieChartContainer svg {
+    border: thin solid green;
+}
+
+.achseInfo {
+    margin-bottom: 30px;
+}
+
+html {
+    scroll-padding-top: 168px; /* height of sticky header */
+}
+
+/* auto add scrollbar for horizontal overflow */
+table {
+    display: block;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+    scroll-padding-top: 280px; /* height of sticky header */
+}
+  }

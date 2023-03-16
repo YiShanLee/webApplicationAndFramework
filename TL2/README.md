@@ -1,0 +1,3 @@
+- {- Die Webseiten wurden mit Firefox 89.0.1 auf Windows 10 getestet. -}
+- {- Bei Google Chrome und anderen Browsern können die Darstellungen abweichen. -}
+- {- Als Server wurde die Live-Server-Extension von Visual Studio Code verwendet. -}

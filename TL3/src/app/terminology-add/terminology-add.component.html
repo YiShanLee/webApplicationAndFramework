@@ -1,0 +1,67 @@
+<div class="container">
+<form>
+    <div class="row">
+        <h5 style="text-align:left"> Eintrag hinzufügen</h5>
+        </div>
+        <div class="row py-2">
+                <div class="col-2">
+                <label>Fachbegriff:</label></div>
+                <div class="col-10">
+                <div class="field">
+                    <input type="text" style="width:500px;" #terminologyTitle/>
+                </div>
+                </div>
+            </div>
+        <div class="row py-2">
+            <div class="col-2">
+                
+                <label>Beschreibung:</label></div>
+                <div class="col-10">
+                <div class="field">
+                    <textarea #terminologyDesc style="width:500px;"></textarea>
+                </div>
+                </div>
+        </div>
+        <div class="row py-2">
+                <div class="col-2">
+                <label>Autor:</label></div>
+                <div class="col-10">
+                <div class="field">
+                    <input type="text" style="width:500px;" #terminologyAuthor/>
+                </div>
+                </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-2">
+                
+                <label>Kapitel:</label></div>
+                <div class="col-10">
+                    <div class="field">
+                        <select #terminologyChapter style="width:500px;">
+                            <option value="Das Web">Das Web</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript, DOM, AJAX">JavaScript, DOM, AJAX</option>
+                            <option value="Bibliotheken / Frameworks">Bibliotheken / Frameworks</option>
+                            <option value="SPA-Frameworks: Architektur, Angular">SPA-Frameworks: Architektur, Angular</option>
+                            <option value="Server-Side Scripting: PHP, ...">Server-Side Scripting: PHP, ...</option>
+                            <option value="Server-Side Frameworks">Server-Side Frameworks</option>
+                            <option value="CMS, LMS, ...">CMS, LMS, ...</option>
+                            <option value="SEO, Sicherheit, Geschichte ...">SEO, Sicherheit, Geschichte ...</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+        <div class="row py-2">
+            <div class="col-2"></div>
+        <button type="button" class="btn btn-primary mx-2 col-1" (click)="add( 
+                terminologyTitle.value, 
+                terminologyDesc.value, 
+                terminologyAuthor.value, 
+                terminologyChapter.value)">Sichern
+        </button>
+        <button type="button" class="btn btn-danger px-0 mx-2 col-1" (click)="goBack()">Abbrechen</button>
+       <p style="color:red" *ngIf="fieldsEmpty==true">Prüfen Sie bitte, ob alle Felder ausgefüllt sind!</p>
+    </div>
+</form>
+</div>

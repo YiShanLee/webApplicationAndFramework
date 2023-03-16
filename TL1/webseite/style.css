@@ -1,0 +1,383 @@
+/*** general styling ***/
+
+body {
+  background-color: white;
+}
+a:hover {
+  color: darkgray;
+  background-color: seashell;
+  border: thin solid white;
+}
+
+/*** Header/Logo Title ****/
+header {
+  padding: 60px;
+  text-align: center;
+  background-color: rosybrown;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.logo {
+  float: left;
+  position: relative;
+  width: 160px;
+}
+
+/*** Page Content ***/
+.content {
+  padding: 20px;
+  display: grid;
+  float: left;
+  margin: 10px;
+  padding-top: 0;
+  padding-bottom: 100px;
+  background-color: white;
+  max-width: 100%;
+  margin: 2%;
+}
+
+.content ul {
+  margin-left: 30px;
+}
+
+/* Module description content */
+
+.webt-table {
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.chapter-content {
+  padding: 15px;
+  margin: 10px;
+  padding-top: 0;
+  padding-bottom: 100px;
+  background-color: white;
+}
+
+/* module info table styling  */
+
+.webt-table {
+  font-size: medium;
+  border-collapse: collapse;
+  border: thin solid rosybrown;
+  text-align: left;
+  width: 90%;
+}
+
+.webt-table th,
+td {
+  border: thin solid rosybrown;
+}
+/*every second row show pink as background color*/
+.webt-table tr:nth-child(even) {
+  background-color: rgb(230, 202, 202);
+}
+
+/* display all pictures with a width of 100px, if not specified further */
+img {
+  width: 100px;
+  padding: 5px;
+}
+
+/* chapter overview styling */
+.chapter {
+  position: relative;
+}
+
+.chapter-link {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border: 15px solid rosybrown;
+  border-top: 65px solid rosybrown;
+}
+
+.chapter-title {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+
+.chapter-title:hover {
+  text-decoration: underline;
+}
+/* underline title when hovering over chapter image.*/
+.chapter-link:hover ~ .chapter-title {
+  text-decoration: underline;
+}
+
+.chapter-column {
+  float: left;
+  width: 370px;
+}
+
+/* Clear floats after image containers */
+.chapter-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* overview page */
+.ueberblick-liste {
+  background-color: white;
+  list-style-type: disc;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  border: thin solid red;
+  margin-top: 1%;
+  padding: 5px;
+  width: max-content;
+  max-width: 100%;
+}
+
+video {
+  margin: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/*** navbar styling ***/
+ul {
+  background-color: rosybrown;
+  overflow: visible;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  flex: 1 1 0%;
+}
+
+nav a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: all 0.25s ease-in;
+  padding: 10px;
+}
+nav a.active {
+  background-color: seashell;
+  color: darkgray;
+  font-weight: bold;
+  border-bottom: thin solid darkgray;
+}
+
+nav ul li ul {
+  padding-bottom: 2px;
+  list-style-type: none;
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  width: 24.5%;
+}
+
+/* flyout  menu styling */
+.flyout:hover > ul,
+ul li ul:hover {
+  display: block;
+  visibility: visible;
+  border-right: thin solid darkgray;
+  border-left: thin solid darkgray;
+  border-bottom: darkgray 2px darkgray;
+}
+nav a:focus,
+nav a:hover {
+  background-color: seashell;
+  color: darkgray;
+}
+
+/*** form styling ***/
+
+/* submit button  */
+button[type="submit"] {
+  background-color: rgb(224, 184, 184);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: monospace;
+  padding: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: seashell;
+  border: darkgray;
+  border-style: dashed;
+}
+
+/* labels */
+label {
+  display: block;
+}
+
+/* input fields  */
+input[type="text"],
+input[type="email"],
+select,
+button[type="submit"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* make input fields text monospaced */
+input[type="text"],
+input[type="email"],
+#explanation,
+option,
+select {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+/* selection of chapters is as wide as the longest chapter name */
+select {
+  width: max-content;
+}
+
+form pre label {
+  font-size: 16px;
+}
+
+/** footer styling **/
+footer {
+  position: fixed; /* footer always stays at the bottom position of the page, even if scrolling */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rosybrown;
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+footer a {
+  text-decoration: none;
+  color: seashell;
+  padding: 1%;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: darkgray;
+}
+
+/*** quiz styling ***/
+/* styling of question box */
+fieldset {
+  display: inline-block;
+  width: 350px;
+  height: 250px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border: thin solid rosybrown;
+}
+
+/* heading for questions appear in bold */
+fieldset legend {
+  font-weight: bold;
+}
+
+/* styling of choices for each question */
+.choice {
+  background-color: #f6f6f6;
+  position: static;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  margin: 5px 0;
+}
+
+/* display code as monospaced */
+.code {
+  font-family: monospace;
+}
+
+/* hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* highlight answer that whould have been correct in dark green */
+:valid .correct {
+  background-color: rgba(61, 181, 64, 0.6);
+}
+
+/* highlight wronly selected answer in red */
+:checked + .choice {
+  color: #ffffff;
+  background-color: #c70000;
+}
+
+/* highlight correctly selected answer in lighter green */
+:checked + .correct {
+  background-color: #3db540;
+}
+
+/* make answers unclickable after one has been chosen */
+:valid {
+  user-select: none;
+}
+:valid + .choice {
+  pointer-events: none;
+}
+
+/* reset quiz score */
+form {
+  counter-reset: quiz-score;
+}
+
+/* add 1 to quiz score for each correctly selected answer */
+:checked + .correct {
+  counter-increment: quiz-score;
+}
+
+/* display <points>/5 after quiz has been finished */
+.result::after {
+  content: counter(quiz-score) "/5";
+}
+
+/* hide score and button */
+.message {
+  display: none;
+}
+
+/* show score and button after quiz has been finished */
+form:valid .message {
+  display: block;
+}
+
+/* style quiz button as the button on the add-term page */
+.quiz-button {
+  background-color: rgb(224, 184, 184);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: monospace;
+  padding: 5px;
+}
+
+.quiz-button:hover {
+  background-color: seashell;
+  border: darkgray;
+  border-style: dashed;
+}

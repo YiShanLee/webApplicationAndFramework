@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <title> Das Web </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design_Unterseiten.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="startseite.html"><img class="logo" src="./img/website-logo.jpg" alt="logo"></a>
+        <h1>Web Technologies Helper</h1>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+        <ul>
+        <li>
+            <a href="./startseite.html">Übersicht</a>
+        </li>
+        <li>
+            <a href="./modul.html">Modul</a>
+        </li>
+        <li class="flyout">
+            <a class="active" href="./kapitel.html">Inhalt</a>
+            <ul>
+                <li><a class="active" href="./Unterseite_Web.html">Das Web</a></li>
+                <li><a href="./Unterseite_HTML_CSS.html">HTML/CSS</a></li>
+            </ul>
+        </li>
+           <li>
+            <a href="./quiz.html">Quiz</a>
+           </li>
+          
+        </ul>
+    </nav>
+    <main class="content" id="back">
+        <h1>Das Web</h1>
+        Hier finden sich die Fachbegriffe für das Kapitel "Das Web" in Form von Karteikarten. Die Überschriften stehen für den jeweiligen Fachbegriff. Der Text darunter stellt die Definition für den Fachbegriff dar. Am Rand hinter den Bildern befinden sich weitere Informationen zu den Fachbegriffen. 
+        <div>Viel Spaß beim Lernen. :-)</div>
+
+        <div class="grid-container">
+            <!-- gridcontainer for definitions -->
+            <div class="grid-containerd">
+            <div class="griditem">
+                <h2> Grundprinzip des Webs </h2>
+                <p> Auf der Client-Side wird eine Anfrage durch einen Nutzer (durch Nutzung eines Browsers) oder ein
+                    Protokoll, etc. ausgelöst, <br>
+                    worauf die angefragten Ressourcen vom Server geholt werden und zurückgebracht werden, <br>
+                    um zum Beispiel vom Browser für den Nutzer zu Anzeige gebracht werden (Rendering).</p>
+            </div>
+            <div class="griditem">
+                <h2> Server-Client-Prinzip </h2>
+                <p> Client und Server sind Programme bzw. Prozesse. Der Server wartet stehts auf Anfragen des Clients
+                    und
+                    lädt HTML-Dokumente (auch Lieferung von Ressourcen genannt). <br>
+                    Die Anfragen werden immer vom Client initialisiert (Client Pull Prinzip), wobei der Browser auf der
+                    Clientseite verschiedene Rollen einnehmen kann. </p>
+            </div>
+            
+        
+            <div class="griditem">
+                <h2> IP Protokoll </h2>
+                <p> Das IP Protokol verpackt zu übertragenden Daten in Pakete (paketorientiert) und leitet sie an andere
+                    Rechner mithilfe von IP-Adresse weiter.<br>
+                    Da Sender und Empfänger sich nicht kennen ist es verbindungslos und damit auch unzuverlässig. <br>
+                    Es gibt dabei zwei Arten von IP-Adressen (IPv4 und IPv6). IPv4 besteht aus vier Blöcken, die jeweils
+                    die
+                    Werte von 0 bis 255 annehmen können, <br>
+                    während IPv6 sich in acht mal 16 Bit unterteilt und über verschiedene Sicherheitsfeatures verfügt.
+                    <br>
+                    Eine besondere Adressen im IPv4 Format ist zum Beispiel 127.0.0.1 für den Localhost. </p>
+            </div>
+            <div class="griditem">
+                <h2> TCP Protokoll </h2>
+                <p> Das TCP Protokoll baut auf dem IP Protokoll auf. <br>
+                    Es ist für das konkrete Zusammensetzen beim Adressaten verantwortlich <br>
+                    und löst das Problem der Unzuverlässigkeit des IP Protokolls durch Retransmisson (erneute Zusendung)
+                    verlorengegangener Pakete. <br>
+                    Auch wird beim TCP Protokoll das Konzept der Ports eingeführt (d.h. kann IP-Adresse Portnummer
+                    beifügen,
+                    denn IP Protokoll kann (nur) Rechner als Ganzes adressieren)
+                </p>
+            </div>
+            
+        
+            <div class="griditem">
+                <h2> Port </h2>
+                <p> Ports sind Verbindungspunkte auf Rechnern, die Programmen und Prozessen auf dem Zielrechner erlauben
+                    über einen gewissen Port zu kommunizieren. Sie sind also Verbindungspunkte zu Programmen am
+                    Zielrechner. </p>
+            </div>
+            <div class="griditem">
+                <h2> Domain Name Service (DNS) </h2>
+                <p> Der Domain Name Service ist ein verteilter hirarchischer Verzeichnisdienst, der den Namnesraum des
+                    Internets verwaltet. <br>
+                    Er ist in Zonen unterteilt, für die unabhänige Administratoren zuständig sind. <br>
+                    Seine Aufgabe besteht vor allem darin Domainnamnen in IP Adressen zu übersetzen (forward lookup).
+                </p>
+            </div>
+               
+        
+            <div class="griditem">
+                <h2> Hypertext Transfer Protokoll</h2>
+                <p> Das HTTP Protokoll ist ein Anwendungsprotokoll des World Wide Webs auf Basis des TCP und des
+                    IP-Protokolls. <br>
+                    Es ist also die gemeinsame Sprache von Web-Client und Web-Server und beschäftigt sich damit, was
+                    logisch
+                    geschieht und welche Befehle genutzt werden. <br>
+                    Physikalisch funktioniert es durch TCP und IP gemäß den Schichten des OSI-Schichten-Modells und
+                    sorgt
+                    für Transfer (angefordert, geliefert) von Ressourcen/Daten beliebiger Formate zwischen Server und
+                    Client. <br>
+                    Es ist ein zustandsloses Protokoll, da kein Verbindungszusammenhang zwischen Client und Server
+                    aufgebaut
+                    wird, d.h. Verbindung wird bei jedem neuen Request neu aufgebaut (auch z.B. bei Navigieren auf
+                    Webseiten). <br>
+                    Das HTTP Protokoll basiert auf dem Request Response Paradigma, d.h. der Server schickt nur eine
+                    Response, wenn der Client vorher ein Request gesendet hat.
+                </p>
+            </div>
+            <div class="griditem">
+                <h2> Ressourcen </h2>
+                <p> Ressourcen sind vom Client bei der Anfrage spezifizierte Entitäten (häufig HTML-Dokumente und
+                    Bilder)
+                    <br>
+                    Beispiele: Video-Sequenzen; interaktive 3D-Medien; PDF-Dokumente; ZIP-Dateien; serverseitige
+                    Programme
+                    ((z.B. in PHP): werden nicht an den Client geliefert, sondern auf Server-Seite ausgeführt -> liefern
+                    als
+                    Resultat typischerweise HTML-Dokumente).
+                </p>
+            </div>
+                
+            <div class="griditem">
+                <h2> Uniform Resource Identifier (URI) </h2>
+                <p> Die URI ist eine Zeichenabfolge zur Identifizierung einer abstrakten oder physischen Ressource. <br>
+                    Sie ist ein sehr allgemeines Konzept und findet auch im sogennanten Semantic Web anwendung. </p>
+            </div>
+            <div class="griditem">
+                <h2> URL und URN </h2>
+                <p> URL und URN sind Unterarten von URIs. <br>
+                    URL steht für Uniform Resource Locator und ) identifiziert eine Ressource über ihren primären
+                    Zugriffsmechanismus (d.h. Ort der Ressource im Netz, wo sie abrufbar ist) <br>
+                    URN steht für Uniform Resource Name und identifiziert mit dem urn Schema eine Ressource mittels
+                    eines
+                    vorhandenen oder frei zu vergebenden Namens (z.B. ISBN Nummer). </p>
+            </div>
+            
+            </div> 
+            <!-- Gridcontainer for images -->  
+            <div class="grid-containeri">
+                <div class="innercard">
+                    <!-- flipcard -->
+                    <div class="thecard">
+                        <div class="thefront">
+                            <img id="info1" src="./img/Komponenten.PNG" alt="Scheme der Komponenten des Webs">
+                        </div>
+                        <div class="theback">
+                            <h2> Komponenten des Web </h2>
+                                <p> Client <br>
+                                    Server <br>
+                                    Protokollfamilie <br>
+                                    Auszeichnungssprache (Markup Language) 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="innercard">
+                    <!-- flipcard -->
+                    <div class="thecard">
+                        <div class="thefront">
+                            <img id="info2" src="./img/IP_Protokoll.PNG" alt="Network of people">
+                        </div>
+                        <div class="theback">
+                            <h2> IP Adressformate </h2>
+                                <p> zwei Versionen: IPv4 und IPv6 (größerer Adressraum, Sicherheitsfeatures (z.B. IPSec), …) <br>
+                                    IPv4 besteht aus 4 Blöcken mit je Zahlen zwischen 0 und 255 (8 Bit) <br> 
+                                    Somit ist N = 232 Adressen, wovon einige Sonderadressen sind. (z.B. 127.0.0.1 für localhost).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="innercard">
+                    <!-- flipcard -->
+                    <div class="thecard">
+                        <div class="thefront">
+                            <img id="info3" src="./img/Ports.PNG" alt="characters on a screen">
+                        </div>
+                        <div class="theback">
+                            <h2> Wichtige Ports </h2>
+                                <p> Port 80: Wellknown Port vor allem für HTTP Requests <br>
+                                    Port 25: für Mailserver <br>
+                                    Port 53: für DNS Server
+                                </p>    
+                        </div>
+                    </div>
+                </div> 
+                <div class="innercard">
+                    <!-- flipcard -->
+                    <div class="thecard">
+                        <div class="thefront">
+                            <img id="info4" src="./img/http.PNG" alt="search bar">
+                        </div>
+                        <div class="theback">
+                            <h2> wichtige HTTP Methoden </h2>
+                                <p> GET: Ressource wird unter Angabe eines URI, in der Parameter kodiert werden, vom Server angefordert <br>
+                                    POST: schickt unbegrenzte Menge an Daten zur Verarbeitung zum Server, wobei die Daten werden als Inhalt der Nachricht übertragen werden. <br>
+                                </p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="innercard">
+                    <!-- flipcard -->
+                    <div class="thecard">
+                        <div class="thefront">
+                            <img id="info5" src="./img/links.PNG" alt="Questionmarks">
+                        </div>
+                        <div class="theback">
+                            <h2> Weitere Links </h2>
+                            <p><a href="https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports" target="_blank"> weitere Portnummern</a></p> 
+                            <br>
+                            <p><a href="https://www.denic.de/service/" target="_blank"> DENIC Service </a></p>
+                            <br>
+                            <p><a href="https://de.wikibooks.org/wiki/Netzwerktechnik:_OSI" target="_blank"> OSI-Schichten-Modell </a></p>  
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <a href="hinzufuegen.html">Begriff hinzufügen</a>
+        <a href="impressum.html">Impressum</a> 
+    </footer>
+</body>
+
+</html>

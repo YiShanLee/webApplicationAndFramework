@@ -1,0 +1,22 @@
+{
+    "/terminologies": {
+      "target": "http://localhost:3000",
+      "secure": true
+    },
+  
+    "/item": {
+      "target": "http://localhost:3000",
+      "secure": true
+    },
+  
+    "/item/*": {
+      "target": "http://localhost:3000",
+      "secure": true
+    },
+
+    "/update/*": {
+      "target": "http://localhost:3000",
+      "secure": true
+    }
+  }
+  

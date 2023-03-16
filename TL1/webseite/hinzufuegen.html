@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WebT Helper</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="startseite.html"
+        ><img class="logo" src="./img/website-logo.jpg" alt="logo"
+      /></a>
+      <h1>Web Technologies Helper</h1>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./startseite.html">Übersicht</a>
+        </li>
+        <li>
+          <a href="./modul.html">Modul</a>
+        </li>
+        <li class="flyout">
+          <a href="./kapitel.html">Inhalt</a>
+          <ul>
+            <li><a href="./Unterseite_Web.html">Das Web</a></li>
+            <li><a href="./Unterseite_HTML_CSS.html">HTML/CSS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./quiz.html">Quiz</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- webpage content -->
+    <main class="content">
+      <h1>Hier können Sie Ihren Fachbegriff hinzufügen.</h1>
+      <!-- form for input  -->
+      <div class="contact">
+        <form action="https://l1n.de/tl1-formular.php" method="post">
+          <!-- name input  -->
+          <label for="firstname">Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Ihr Name..."
+          />
+
+          <!-- email input -->
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@mail.de"
+          />
+
+          <!-- term input -->
+          <label for="term">Fachbegriff</label>
+          <input
+            type="text"
+            id="term"
+            name="term"
+            placeholder="Fachbegriff..."
+          />
+
+          <!-- chapter selection -->
+          <label for="chapter">Kapitel</label>
+          <select id="chapter" name="chapter">
+            <option value="Kapitel1-Das Web">Kapitel1-Das Web</option>
+            <option value="Kapitel2-HTML/CSS">Kapitel2-HTML/CSS</option>
+          </select>
+
+          <input type="hidden" name="group_number" value="32" />
+
+          <!-- explanation input -->
+          <label for="explanation">Erklärung:</label>
+          <textarea
+            id="explanation"
+            name="Erklärung"
+            cols="60"
+            rows="5"
+            placeholder="..."
+          ></textarea>
+          <button type="submit" value="Daten absenden">Daten absenden</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- footer with links to imprint and the adding-term form  -->
+    <footer>
+      <a href="hinzufuegen.html">Begriff hinzufügen</a>
+      <a href="impressum.html">Impressum</a>
+    </footer>
+  </body>
+</html>

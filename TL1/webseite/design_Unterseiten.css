@@ -1,0 +1,155 @@
+/* grid-container and griditem are needed to put the definitions in a grid */
+
+/* grid-container for definitions and images */
+.grid-container {
+  align-items: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 80% 40%;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* container for definitions */
+.grid-containerd {
+  align-items: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* container for images */
+.grid-containeri {
+  align-items: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+/* div for the definitions */
+.griditem {
+  background-color: rgb(240, 236, 236);
+  padding: 20px;
+  max-width: 400px;
+  height: 350px;
+  text-align: center;
+  padding: 10px;
+  overflow-y: scroll;
+  border: thin solid lightgray;
+  box-shadow: 2px 2px 2px 1px darkgray;
+}
+
+/* animation hover for definitions */
+.griditem:hover {
+  background-color: rgb(204, 255, 204);
+}
+
+/* flipcard background and sort of griditem  */
+.innercard {
+  position: relative;
+  width: 150px;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* flipcard it self */
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+/* hover flipcard */
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+/* specific styling flipcard images */
+#info1,
+#info2,
+#info3,
+#info4,
+#info5 {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 350px;
+  border-style: dashed;
+  border-color: rosybrown;
+}
+
+/* front flipcard */
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(204, 255, 204);
+}
+
+/* back flipcard */
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(204, 255, 204);
+  color: black;
+  text-align: left;
+  padding: 5px;
+  border-color: rosybrown;
+  border-style: dashed;
+  transform: rotateY(180deg);
+}
+
+/* background design headline and introducing text */
+#back {
+  background-color: lightyellow;
+  border-style: dashed;
+  border-color: rosybrown;
+  border-radius: 15px;
+}
+
+/* media query for smaller devices like tablets */
+@media screen and (max-width: 1024px) {
+  .grid-containeri {
+    grid-template-columns: 50% 50%;
+  }
+
+  .grid-container {
+    grid-template-columns: none;
+  }
+
+  .theback {
+    overflow-y: scroll;
+  }
+}
+
+/* media query for smartphones */
+@media screen and (max-width: 600px) {
+  .grid-containeri {
+    grid-template-columns: none;
+  }
+
+  .grid-containerd {
+    grid-template-columns: none;
+  }
+
+  .grid-container {
+    grid-template-columns: none;
+  }
+
+  .theback {
+    overflow-y: scroll;
+  }
+}

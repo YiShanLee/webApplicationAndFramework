@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>WebT Helper</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="startseite.html"
+        ><img class="logo" src="./img/website-logo.jpg" alt="logo"
+      /></a>
+      <h1>Web Technologies Helper</h1>
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./startseite.html">Übersicht</a>
+        </li>
+        <li>
+          <a href="./modul.html">Modul</a>
+        </li>
+        <li class="flyout">
+          <a class="active" href="./kapitel.html">Inhalt</a>
+          <ul>
+            <li><a href="./Unterseite_Web.html">Das Web</a></li>
+            <li><a href="./Unterseite_HTML_CSS.html">HTML/CSS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./quiz.html">Quiz</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- content of webpage -->
+    <main class="chapter-content">
+      <h2>Kapitelübersicht</h2>
+
+      <div class="chapter-row">
+        <div class="chapter-column">
+          <div class="chapter">
+            <a href="./Unterseite_Web.html">
+              <img
+                src="./img/Web-Kapitelbild.webp"
+                alt="web-kapitel"
+                class="chapter-link"
+              />
+              <div class="chapter-title">Das Web</div></a
+            >
+          </div>
+        </div>
+
+        <div class="chapter-column">
+          <div class="chapter">
+            <a href="./Unterseite_HTML_CSS.html">
+              <img
+                src="./img/HTML-Kapitelbild.png"
+                alt="html-kapitel"
+                class="chapter-link"
+              />
+              <div class="chapter-title">HTML/CSS</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <a href="hinzufuegen.html">Begriff hinzufügen</a>
+      <a href="impressum.html">Impressum</a>
+    </footer>
+  </body>
+</html>
